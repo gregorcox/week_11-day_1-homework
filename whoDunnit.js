@@ -1,4 +1,4 @@
-#### Episode 1
+// #### Episode 1
 
 const scenario = {
   murderer: 'Miss Scarlet',
