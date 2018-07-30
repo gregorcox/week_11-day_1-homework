@@ -16,17 +16,35 @@
 
 // #### Episode 2
 
-const murderer = 'Professor Plum';
+// const murderer = 'Professor Plum';
+//
+// const changeMurderer = function() {
+//   murderer = 'Mrs. Peacock';
+// }
+//
+// const declareMurderer = function() {
+//   return `The murderer is ${murderer}.`;
+// }
+//
+// changeMurderer();
+// const verdict = declareMurderer();
+// console.log(verdict);
+//"Cannot change a constant variable"
 
-const changeMurderer = function() {
-  murderer = 'Mrs. Peacock';
-}
+// #### Episode 3
+
+
+let murderer = 'Professor Plum';
 
 const declareMurderer = function() {
+  let murderer = 'Mrs. Peacock';
   return `The murderer is ${murderer}.`;
 }
 
-changeMurderer();
-const verdict = declareMurderer();
-console.log(verdict);
-//"Cannot change a constant variable"
+const firstVerdict = declareMurderer();
+console.log('First Verdict: ', firstVerdict);
+
+const secondVerdict = `The murderer is ${murderer}.`;
+console.log('Second Verdict: ', secondVerdict);
+//"First Verdict: Mrs Peacock"
+//"Second Verdict: Professor Plum"
